@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96BB801D-71EA-4D29-9E34-3F04E1A462CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mainPro</RootNamespace>
+    <AssemblyName>mainPro</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AeroWizard">
+      <HintPath>lib\v4.5.2\AeroWizard.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.WorkflowServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationClientsideProviders" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Wpf">
+      <HintPath>..\..\..\..\..\Desktop\Wpf\Wpf\bin\Debug\Wpf.exe</HintPath>
+    </Reference>
+    <Reference Include="XamlBuildTask" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_attandance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_attandance.Designer.cs">
+      <DependentUpon>Add_attandance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assestDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>assestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="att_check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="att_check.Designer.cs">
+      <DependentUpon>att_check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="class_add.Designer.cs">
+      <DependentUpon>class_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Db_teachearDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Db_teachearDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="default.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="default.Designer.cs">
+      <DependentUpon>default.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stuudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stuudent.Designer.cs">
+      <DependentUpon>stuudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="te_view_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="te_view_details.Designer.cs">
+      <DependentUpon>te_view_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="st_view_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="st_view_details.Designer.cs">
+      <DependentUpon>st_view_details.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_attandance.resx">
+      <DependentUpon>Add_attandance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="att_check.resx">
+      <DependentUpon>att_check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="class_add.resx">
+      <DependentUpon>class_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.resx">
+      <DependentUpon>default.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stuudent.resx">
+      <DependentUpon>stuudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="te_view_details.resx">
+      <DependentUpon>te_view_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="st_view_details.resx">
+      <DependentUpon>st_view_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="assestDataSet.xsc">
+      <DependentUpon>assestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="assestDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>assestDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="assestDataSet.xss">
+      <DependentUpon>assestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Db_teachearDataSet.xsc">
+      <DependentUpon>Db_teachearDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Db_teachearDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Db_teachearDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Db_teachearDataSet.xss">
+      <DependentUpon>Db_teachearDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
